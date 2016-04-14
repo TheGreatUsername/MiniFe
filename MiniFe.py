@@ -1,3 +1,5 @@
+# Made by Aaron Deak
+
 import os
 import sys
 from itertools import groupby
