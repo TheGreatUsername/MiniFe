@@ -1,0 +1,10 @@
+const argument = 5     # Fe supports constants
+
+<> fib(n)
+    match n
+        0 : 1
+        1 : 1
+        default : fib(n-1) + fib(n-2)
+        
+<> start()
+    outln fib(argument)
