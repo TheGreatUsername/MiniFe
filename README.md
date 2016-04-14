@@ -18,4 +18,5 @@ Fe actually stands for functional esoteric language, but it lost its esoteria af
 - Python
 - NASM
 - gcc
+
 These can be installed using sudo apt-get install
