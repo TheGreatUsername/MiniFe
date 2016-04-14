@@ -1,0 +1,9 @@
+const five = 5       # declaring a constant
+
+<> addfour(n)        # declaring a new method
+    n + 4            # last expression evaluated is the value returned
+    
+<> start()
+    out five         # out prints numeric value with a space
+    outln addfour(2) # outln prints numeric value with a new line
+    outchar 'c'      # outchar just prints the ascii value of the argument
