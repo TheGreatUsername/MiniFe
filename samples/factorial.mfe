@@ -1,0 +1,8 @@
+# a recursive factorial implementation
+<> fact(n)
+    match n                       # match works like a switch case
+        0 : 1                     # the case is 0 and the return expression for this case is 1
+        default : n * fact(n-1)   # default is called if none of the cases match
+
+<> start()                        # the method at the bottom is always the first one called
+    outln fact(4)
