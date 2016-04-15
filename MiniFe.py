@@ -1,8 +1,5 @@
-# Made by Aaron Deak
-
 import os
 import sys
-from itertools import groupby
 
 foutname = 'rout'
 
@@ -306,9 +303,9 @@ def operand():
     else : expect('valid operand')
 
 def tryop(opd1, op, opd2):
-    if isint(opd1) and isint(opd2):
-        o1 = int(opd1)
-        o2 = int(opd2)
+    if iscint(opd1) and iscint(opd2):
+        o1 = ctoint(opd1)
+        o2 = ctoint(opd2)
         if op == addop:
             return o1 + o2
         elif op == subop:
