@@ -511,11 +511,13 @@ def doahead():
     match(newline)
 
 def doheader():
-    while look in cnstkeys:
+    while look in cnstkeys or look == newline:
         if look == 'const':
             doconst()
         elif look == ahead:
             doahead()
+        elif look == newline:
+            getok()
 
 def start():
 
@@ -530,7 +532,7 @@ def start():
     getok()
 
     doheader()
-    
+
     match('<')
     match('>')
     newmet()
