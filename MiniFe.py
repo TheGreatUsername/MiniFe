@@ -145,7 +145,9 @@ def err(s):
     sys.exit(0)
 
 def expect(s):
-    err("expected '{}', found '{}'".format(s, look))
+    if look == terminate : fnd = 'end of file'
+    else : fnd = look
+    err("expected '{}', found '{}'".format(s, fnd))
 
 def getok():
     global ind
